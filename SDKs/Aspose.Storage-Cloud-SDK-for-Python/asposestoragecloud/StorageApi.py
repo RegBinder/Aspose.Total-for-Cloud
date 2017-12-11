@@ -33,12 +33,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'versionId', 'storage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method DeleteFile" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -105,12 +105,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['storage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method GetDiscUsage" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -169,12 +169,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'versionId', 'storage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method GetDownload" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -245,12 +245,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'versionId', 'storage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method GetIsExist" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -319,12 +319,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'storage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method GetListFileVersions" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -393,12 +393,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['src', 'dest', 'versionId', 'storage', 'destStorage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method PostMoveFile" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -487,12 +487,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'newdest', 'versionId', 'storage', 'destStorage', 'file'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method PutCopy" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -577,12 +577,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'versionId', 'storage', 'file'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method PutCreate" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -653,12 +653,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'storage', 'recursive'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method DeleteFolder" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -727,12 +727,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'storage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method GetListFiles" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -799,12 +799,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['src', 'dest', 'storage', 'destStorage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method PostMoveFolder" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -883,12 +883,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'newdest', 'storage', 'destStorage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method PutCopyFolder" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -965,12 +965,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['Path', 'storage', 'destStorage'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method PutCreateFolder" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
@@ -1037,12 +1037,12 @@ class StorageApi(object):
         allParams = dict.fromkeys(['name'])
 
         params = locals()
-        for (key, val) in params['kwargs'].iteritems():
+        for (key, val) in params['kwargs'].items():
             if key not in allParams:
                 raise TypeError("Got an unexpected keyword argument '%s' to method GetIsStorageExist" % key)
             params[key] = val
         
-        for (key, val) in params.iteritems():
+        for (key, val) in params.items():
             if key in allParams:
                 allParams[key] = val
         
