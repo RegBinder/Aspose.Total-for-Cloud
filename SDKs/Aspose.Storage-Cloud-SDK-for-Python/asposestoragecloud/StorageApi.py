@@ -5,8 +5,8 @@ import os
 import urllib
 import json
 import re
-from models import *
-from ApiClient import ApiException
+from asposestoragecloud.models import *
+from asposestoragecloud.ApiClient import ApiException
 
 
 class StorageApi(object):
